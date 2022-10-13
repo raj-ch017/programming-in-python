@@ -1,0 +1,17 @@
+# Exercise 5
+# author: @raj-ch017
+
+"""
+Use two print statements to write the following string:
+
+    Okay, it is time to learn about operators.
+
+There are several ways to solve this problem, so there is no single solution. 
+The key to this problem is removing the newline character from the first print statement. 
+This will ensure that two print statements will produce a single line of output. Here is one possible solution.
+"""
+
+string1 = "Okay, it is time to "
+string2 = "learn about operators."
+print(string1,end='')
+print(string2)
