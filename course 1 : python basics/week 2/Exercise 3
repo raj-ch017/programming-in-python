@@ -1,0 +1,13 @@
+# Exercise 3
+# author: @raj-ch017
+
+"""
+Write a program that divides 7 by 2, but prints 3.
+
+Division in Python always returns a float, but your program is expected to return an int. 
+Use the floor division operator (//) to return an int. Floor division also truncates 3.5 to 3.
+"""
+
+a = 7
+b = 2
+print(a//b)
