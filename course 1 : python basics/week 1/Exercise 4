@@ -1,0 +1,9 @@
+# Exercise 4
+# author: @raj-ch017
+
+"""
+Declare a variable my_float and assign it the floating point value of 3.0. Print the variable.
+"""
+
+my_float = 3.0
+print(my_float)
