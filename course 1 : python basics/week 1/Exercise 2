@@ -1,0 +1,9 @@
+# Exercise 2
+# author: @raj-ch017
+
+"""
+Declare a variable my_int and assign it the integer value of 3. Print the variable.
+"""
+
+my_int = 3
+print(my_int)
