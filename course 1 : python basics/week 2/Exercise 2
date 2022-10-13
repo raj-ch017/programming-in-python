@@ -1,0 +1,13 @@
+# Exercise 2
+# author: @raj-ch017
+
+"""
+Write a program that outputs Hello world. Your program must do the following things:
+
+    Use two variables, one with Hello and the other with world.
+    Use a single print statement.
+"""
+
+x = "Hello "
+y = "world"
+print(x+y)
