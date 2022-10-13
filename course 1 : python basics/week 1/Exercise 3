@@ -1,0 +1,13 @@
+# Exercise 3
+# author: @raj-ch017
+
+"""
+Declare a variable my_string and assign it the string value of:
+
+    This is a string
+
+Print the variable.
+"""
+
+my_string = "This is a string"
+print(my_string)
