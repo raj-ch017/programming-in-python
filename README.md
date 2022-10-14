@@ -1,6 +1,9 @@
 <h1>
 <p align = "center">
-Programming in Python: A Hands-on Introduction
+Programming in Python: 
+</p>
+<p align = "center">
+A Hands-on Introduction
 </p>
 </h1>
 
@@ -9,7 +12,10 @@ This specialization is intended for people without programming experience who se
 
 <h1>
 <p align = "center">
-Course 1 - Python Basics: Selection and Iteration
+Course 1 -
+</p>
+<p align = "center">
+Python Basics: Selection and Iteration
 </p>
 </h1>
 
@@ -27,7 +33,10 @@ Course Objectives:
   
 <h1>
 <p align = "center">
-Course 2 - Python Basic Structures: Lists, Strings, and Files
+Course 2 -
+</p>
+<p align = "center">
+Python Basic Structures: Lists, Strings, and Files
 </p>
 </h1>
 
