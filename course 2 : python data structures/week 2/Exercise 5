@@ -1,0 +1,25 @@
+# Exercise 5
+# author: @raj-ch017
+
+"""
+Write a program that captures input from the user. Then, swap the letters two at a time in the string. 
+The first two characters change places, the third and fourth characters change places, etc. 
+Assume that the user will only input strings with an even number of characters. Important, do not put a prompt when asking for user input. 
+Just use input(). Adding a prompt will cause your program to not pass the tests.
+
+Expected Output:
+
+  If the user inputs home, then the output is ohem
+
+  If the user inputs cars, then the output is acsr
+  
+"""
+
+user_string = input()
+
+out_string = ""
+
+for i in range(0,len(user_string),2):
+  out_string = out_string + user_string[i+1] + user_string[i]
+
+print(out_string)
