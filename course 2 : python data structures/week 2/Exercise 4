@@ -1,0 +1,36 @@
+# Exercise 4
+# author: @raj-ch017
+
+"""
+Write a program that takes input from a user. Print the first half of the string on one line, and the second half on another. 
+In the case of a string that has an odd number of characters, the second line will have the extra character. 
+Important, do not put a prompt when asking for user input. Just use input(). 
+Adding a prompt will cause your program to not pass the tests.
+
+
+Expected Output:
+
+  If the user inputs home, the output will be:
+
+      ho
+      me
+
+  If the user inputs hooray Python, the output will be:
+
+      hooray
+        Python
+        
+"""
+
+user_give = input()
+
+x = len(user_give)
+y = x // 2
+
+if (x%2 == 0):
+  print(user_give[:y])
+  print(user_give[y:])
+
+if (x%2 == 1):
+  print(user_give[:y])
+  print(" " + user_give[y:])
