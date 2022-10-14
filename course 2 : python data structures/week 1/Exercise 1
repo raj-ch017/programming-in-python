@@ -1,0 +1,41 @@
+# Exercise 1
+# author: @raj-ch017
+
+"""
+Write a program that takes a list of integers called numbers and replaces each element greater than 10 with a '*'. Print the new version of numbers.
+
+Expected Output:
+
+    If numbers = [30, 1, 20, 4] then you will print ['*', 1, '*', 4]
+    If numbers = [5, 9, 11, 23] then you will print [5, 9, '*', '*']
+
+
+Important:
+
+Do not edit the code in the top section. This code is necessary for the auto-grader to work. Add your code in the section below.
+"""
+
+########################################################
+# DO NOT EDIT THE CODE IN THE SECTION BELOW
+########################################################
+import sys
+
+numbers = sys.argv[1:]
+for i in range(len(numbers)):
+  numbers[i] = int(numbers[i])
+
+########################################################
+# Enter your code below
+########################################################
+
+
+out_list = []
+
+for number in numbers:
+  if number > 10:
+    out_list.append("*")
+  else:
+    out_list.append(number)
+
+numbers = list(out_list)
+print(numbers)
