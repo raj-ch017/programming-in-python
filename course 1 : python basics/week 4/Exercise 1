@@ -1,0 +1,14 @@
+# Exercise 1
+# author: @raj-ch017
+
+"""
+Using while True:, create a loop that prints the sum of all the numbers between 0 and 100. Note: the sum should include the number 100.
+"""
+
+sum = 0
+
+while True:
+  for i in range(101):
+    sum += i
+  break
+print(sum)
