@@ -1,0 +1,52 @@
+# Exercise 4
+# author: @raj-ch017
+
+"""
+Write a program that reads a tab delimited CSV file and prints the name of the oldest person in the file.
+
+Expected Output:
+
+  The CSV file will look something like the one below. Note, there will be a row with header titles.
+
+      Name	Age	Career
+
+      Peter	38	Doctor
+      Paul	41	Lawyer
+      Mary	32	Systems Engineer
+      
+      
+The first two lines of your code must look like this:
+
+      import sys, csv
+
+      test_file = sys.argv[1]
+      
+      
+This allows for different text files to be sent to your program for testing. 
+Hint, to open the file use with open(test_file, "r".... The TRY IT button below will send a test file to your program. 
+
+You should see the following output:
+
+      The oldest person is Paul.
+"""
+
+import sys
+import csv
+
+test_file = sys.argv[1]
+
+the_dict = {}
+
+with open(test_file,"r") as input_file:
+  the_content = csv.reader(input_file, delimiter = "\t")
+  next(the_content)
+  for name,age, ocp in the_content:
+    the_dict[name] = age
+
+the_age = max(the_dict.values())
+
+for peeps in the_dict:
+  if (the_dict[peeps] == the_age):
+    print("The oldest person is {}.".format(peeps))
+  else:
+    pass
