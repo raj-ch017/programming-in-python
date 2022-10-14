@@ -1,0 +1,58 @@
+# Exercise 2
+# author: @raj-ch017
+
+"""
+Write a program that reads a comma delimited CSV file with four columns and returns the average of each column in the file.
+
+Expected Output:
+
+
+The first two lines of your code must look like this:
+
+  import sys
+
+  test_file = sys.argv[1]
+  
+This allows for different text files to be sent to your program for testing. 
+Hint, to open the file use with open(test_file, "r".... The TRY IT button below will send a test file to your program. 
+
+You should see the following output:
+
+    10.0 8.0 6.0 20.0
+    
+"""
+
+import sys
+import csv
+
+test_file = sys.argv[1]
+
+
+l1 = []
+l2 = []
+l3 = []
+l4 = []
+
+with open(test_file,"r") as input_file:
+  the_content = csv.reader(input_file, delimiter = ",")
+  for line in the_content:
+    l1.append(line[0])
+    l2.append(line[1])
+    l3.append(line[2])
+    l4.append(line[3])
+
+the_list = []
+the_list.append(l1)
+the_list.append(l2)
+the_list.append(l3)
+the_list.append(l4)
+
+#print(the_list)
+
+add = 0
+
+for ele in the_list:
+  for num in ele:
+    add += int(num)
+  print(add/len(ele),end=' ')
+  add = 0
