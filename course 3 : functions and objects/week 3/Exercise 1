@@ -1,0 +1,22 @@
+# Exercise 1
+# author: @raj-ch017
+
+"""
+Define the class Cat. The class should have a constructor but without any parameters. 
+The constructor will generate the following attributes:
+
+      breed - "american shorthair"
+      color - "black"
+      name - "kiwi"
+"""
+
+class Cat:
+  def __init__(self):
+    self.breed = "american shorthair"
+    self.color = "black"
+    self.name = "kiwi"
+
+cat1 = Cat()
+print(cat1.name)
+print(cat1.color)
+print(cat1.breed)
