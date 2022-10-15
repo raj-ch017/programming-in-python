@@ -1,0 +1,41 @@
+# Exercise 1
+# author: @raj-ch017
+
+"""
+Use the CelestialBody class to the left as the parent class. 
+Create the Satellite and Planet classes, both of which are children of CelestialBody. 
+Using the super() keyword to extend the __init__ method of the parent class, add the attribute host_planet to the 
+Satellite class and add the attribute host_star to the Planet class.
+
+Expected Attributes:
+
+  After extending the __init__ method, your classes should have the following attributes.
+
+      CelestialBody	Satellite	Planet
+
+      size	size	size
+      mass	mass	mass
+      composition	composition	composition
+      name	name	name
+      host_planet	host_star
+"""
+
+
+class CelestialBody:
+  def __init__(self, size, mass, composition, name):
+    self.size = size
+    self.mass = mass
+    self.composition = composition
+    self.name = name
+    
+# create the satellite class
+class Satellite(CelestialBody):
+  def __init__(self, size, mass, composition, name, host_planet):
+    super().__init__(size, mass, composition, name)
+    self.host_planet = host_planet
+
+# create the planet class
+class Planet(CelestialBody):
+  def __init__(self, size, mass, composition, name, host_star):
+    super().__init__(size, mass, composition, name)
+    self.host_star = host_star
