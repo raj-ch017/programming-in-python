@@ -1,0 +1,40 @@
+# Exercise 2
+# author: @raj-ch017
+
+"""
+Use the parent class Book to help you solve this problem. 
+Create the child class BlogPost and override the constructor so that the child class has the following attributes:
+
+      website - a string that represents the website hosting the blog post
+      title - a string that represents the title of the blog post
+      author - a string that represents the author of the blog post
+      word_count - an integer that represents the number of words in the blog post
+      genre - a string that represents the genre of the blog post
+      page_views - an integer that represents the page views for the blog post
+      
+"""
+
+# parent class
+class Book:
+  def __init__(self, title, author, genre):
+    self.title = title
+    self.author = author
+    self.genre = genre
+
+# child class
+
+class BlogPost(Book):
+  def __init__(self,website,title,author,word_count,genre,page_views):
+    super().__init__(title,author,genre)
+    self.website = website
+    self.word_count = word_count
+    self.page_views = page_views
+
+my_post = BlogPost("Vogue", "Hot Summer Trends", "Amy Gutierrez", 2319, "fashion", 2748)
+
+print("The website for the blog is {}".format(my_post.website))
+print("The title of the blog post is {}".format(my_post.title))
+print("The author of the blog is {}".format(my_post.author))
+print("The word count is {}".format(my_post.word_count))
+print("The genre of the blog is {}".format(my_post.genre))
+print("The views on the page is {}".format(my_post.page_views))
