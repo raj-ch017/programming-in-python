@@ -1,0 +1,18 @@
+# Exercise 4
+# author: @raj-ch017
+
+"""
+Write a recursive function called reverse_string that takes a string as a parameter. 
+Return the string in reverse order. Hint, the slice operator will be helpful when solving this problem.
+
+Expected Output:
+
+      If the function call is reverse_string("cat"), then the function would return tac
+      If the function call is reverse_string("house"), then the function would return esuoh
+"""
+
+def reverse_string(word):
+    if len(word) == 1:
+        return word[0]
+    else:
+        return word[-1] + reverse_string(word[:-1])
