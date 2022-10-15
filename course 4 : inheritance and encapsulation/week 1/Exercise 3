@@ -1,0 +1,34 @@
+# Exercise 3
+# author: @raj-ch017
+
+"""
+Create the class Child such that the following criteria are met:
+    
+    
+      Child is a subclass of Parent1 and Parent2
+      Override identify so that it returns “This method is called from Child”
+      Create the method identify2 that invokes the identify method from Parent2. This must be done using the super() keyword.
+"""
+
+class Parent1:
+  def identify(self):
+    return "This method is called from Parent1"
+    
+class Parent2:
+  def identify(self):
+    return "This method is called from Parent2"
+    
+# declare child class here
+
+  
+
+class Child(Parent2,Parent1):
+  def identify(self):
+    return "This method is called from Child"
+
+  def identify2(self):
+    return super().identify()
+
+child_object = Child()
+print(child_object.identify())
+print(child_object.identify2())
