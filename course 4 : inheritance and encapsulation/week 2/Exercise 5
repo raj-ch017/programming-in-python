@@ -1,0 +1,51 @@
+# Exercise 5
+# author: @raj-ch107
+
+"""
+Define the Cyclist class which has attributes name, nationality, and nickname. Use the Python convention to make these attributes private. 
+Create the getters and setters using the property decorator.
+"""
+
+class Cyclist:
+  def __init__(self,name,nationality,nickname):
+    self._name = name
+    self._nationality = nationality
+    self._nickname = nickname
+
+  @property
+  def name(self):
+    return self._name
+
+  @name.setter
+  def name(self,val):
+    self._name = val
+
+  @property
+  def nationality(self):
+    return self._nationality
+
+  @nationality.setter
+  def nationality(self,val):
+    self._nationality = val
+
+  @property
+  def nickname(self):
+    return self._nickname
+
+  @nickname.setter
+  def nickname(self,val):
+    self._nickname = val
+
+my_guy = Cyclist("Greg LeMond","American","Le Monststre")
+
+print(my_guy.name)
+print(my_guy.nationality)
+print(my_guy.nickname)
+
+my_guy.name = "Eddy Merckx"
+my_guy.nationality = "Belgian"
+my_guy.nickname = "The Cannibal"
+
+print(my_guy.name)
+print(my_guy.nationality)
+print(my_guy.nickname)
