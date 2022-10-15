@@ -1,0 +1,20 @@
+# Exercise 1
+# author: @raj-ch017
+
+"""
+Write a function called avg that takes two parameters. Return the average of these two parameters. 
+If the parameters are not numbers, return the string, Please use two numbers as parameters.
+
+Expected Output:
+
+      If the function call is avg(10,25), then the function would return 17.5
+      If the function call is avg(10, "cat"), then the function would return Please use two numbers as parameters
+"""
+
+def avg(num1,num2):
+  try:
+    return (num1+num2)/2
+  except:
+    return "Please use two numbers as parameters"
+
+print(avg(10,"cat"))
