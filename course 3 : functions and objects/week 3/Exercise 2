@@ -1,0 +1,27 @@
+# Exercise 2
+# author: @raj-ch017
+
+"""
+Define the class Observation which will help record observational data from a scientific outpost in Antarctica. 
+The class should have a constructor that accepts parameters for date, temperature, elevation, precipitation, and penguins. 
+Since Antarctica is a desert, precipitation should default to 0.
+
+      date- String with the date of the observation, e.g. "October 26, 2019"
+      temperature - Float with the temperature in Celsius, e.g. -47
+      elevation - Float with elevation in meters, e.g. 329.4
+      penguins - Integer representing the number of penguins observed, e.g. 3
+      precipitation- Float with precipitation in centimeters, e.g. 0.7
+"""
+
+class Observation:
+
+  def __init__(self,date,temperature,elevation,penguins,precipitation=0):
+    self.date = date
+    self.temperature = temperature
+    self.elevation = elevation
+    self.penguins = penguins
+    self.precipitation = precipitation
+
+day1 = Observation("June 30",-47.3,325.7,11,0.3)
+
+#print("Date: {} \nTemperature:{} \nElevation: {} \nPrecipitation:{} \nNumber of penguins spotted: {}".format(day1.date,day1.temperature,day1.elevation,day1.precipitation,day1.penguins))
