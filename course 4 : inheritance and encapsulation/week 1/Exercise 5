@@ -1,0 +1,59 @@
+# Exercise 5
+# author: @raj-ch017
+
+"""
+Use the parent classes to the left to help you solve this problem. 
+The first parent is the Person class with some very generic information. 
+The second class, CardHolder, is the class for a credit card holder. Create the child class PlantinumClient. 
+This class inherits all of the attributes of both parent classes. In addition, the child class has the attributes cash_back and rewards. 
+cash_back should be set to 0.02 and rewards should be set to 0. 
+Override the process_sale method so that 2% of each sale is added to rewards.
+
+"""
+
+# parent classes
+class Person:
+  def __init__(self, name, address):
+    self.name = name
+    self.address = address
+    
+  def get_info(self):
+    return f"{self.name} lives at {self.address}."
+  
+class CardHolder:
+  def __init__(self, account_number):
+    self.account_number = account_number
+    self.balance = 0
+    self.credit_limit = 5000
+    
+  def process_sale(self, price):
+    self.balance += price
+    
+  def make_payment(self, amount):
+    self.balance -= amount
+    
+# declare child class here
+
+
+class PlatinumClient(Person,CardHolder):
+  def __init__(self,name,address,account_number,cash_back=0.02,rewards=0):
+    Person.__init__(self,name,address)
+    CardHolder.__init__(self,account_number)
+    self.cash_back = cash_back
+    self.rewards = rewards
+
+  def process_sale(self,price):
+    amount = (2*price)/100
+    self.rewards += amount
+    super().process_sale(price)
+    return self.rewards
+
+
+platinum = PlatinumClient("Sarah","101 Main Street",123456)
+
+platinum.process_sale(500)
+print(platinum.rewards)
+print(platinum.balance)
+print(platinum.make_payment(50))
+print(platinum.balance)
+print(platinum.get_info())
