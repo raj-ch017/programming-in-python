@@ -1,0 +1,39 @@
+# Exercise 4
+# author: @raj-ch017
+
+Write a function called best_team that takes a csv file as a parameter. 
+Read the comma-delimited CSV file specified by the variable mlb_data. 
+The CSV file has a list of all of the MLB teams and their performance from the 2019 season. The function should return the team name for the team with the most wins. 
+Important, the CSV file has a header of Tm,Lg,G,W,L, which stands for team name, league, games played, wins, and losses. 
+Below are the file name and file path variables you will need for this exercise.
+
+      mlb_data = "student_folder/.exercises/mlb_data.csv"
+
+Expected Output:
+
+The function call should look like this, best_team(file), and the function should return HOU. 
+However, your function will be tested with other CSV files in which different teams will have the highest win total
+
+""""
+
+import csv
+
+mlb_data = r"student_folder/.exercises/mlb_data.csv"
+
+def best_team(mlb_data):
+  the_dict = {}
+  with open(mlb_data,"r") as input_file:
+    the_contents = csv.reader(input_file)
+    next(the_contents)
+    for team, league, games, win, loss in the_contents:
+      the_dict[team] = int(win)
+  #print(the_dict)
+  win_list = the_dict.values()
+  most_wins = max(win_list)
+  for val in the_dict:
+    if the_dict[val] == most_wins:
+      return val
+    else:
+      pass
+
+print(best_team(mlb_data))
