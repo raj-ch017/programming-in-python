@@ -1,0 +1,54 @@
+# Exercise 2
+# author: @raj-ch017
+
+"""
+Complete the Airplane and Train classes so that when an instance of each is passed to the passengers function, 
+they will return the total number of passengers on board.
+"""
+
+class Airplane:
+  def __init__(self, first_class=None, business_class=None, coach=None):
+    self.first_class = first_class
+    self.business_class = business_class
+    self.coach = coach
+
+  def total(self):
+    if self.first_class is not None and self.business_class is not None and self.coach is not None:
+      return self.first_class + self.business_class + self.coach
+    elif self.first_class is not None and self.business_class is not None and self.coach is None:
+      return self.first_class + self.business_class
+    elif self.first_class is not None and self.business_class is None and self.coach is None:
+      return self.first_class
+    else:
+      return 0
+    
+  
+class Train:
+  def __init__(self, car1=None, car2=None, car3=None, car4=None, car5=None):
+    self.car1 = car1
+    self.car2 = car2
+    self.car3 = car3
+    self.car4 = car4
+    self.car5 = car5
+
+  def total(self):
+    if self.car1 is not None and self.car2 is not None and self.car3 is not None and self.car4 is not None and self.car5 is not None:
+      return self.car1 + self.car2 + self.car3 + self.car4 + self.car5
+    elif self.car1 is not None and self.car2 is not None and self.car3 is not None and self.car4 is not None and self.car5 is None:
+      return self.car1 + self.car2 + self.car3 + self.car4
+    elif self.car1 is not None and self.car2 is not None and self.car3 is not None and self.car4 is None and self.car5 is None:
+      return self.car1 + self.car2 + self.car3
+    elif self.car1 is not None and self.car2 is not None and self.car3 is None and self.car4 is None and self.car5 is None:
+      return self.car1 + self.car2
+    elif self.car1 is not None and self.car2 is None and self.car3 is None and self.car4 is None and self.car5 is None:
+      return self.car1
+    else:
+      return 0
+
+  
+def passengers(obj):
+  print(f'There are {obj.total()} passengers on board.')
+
+plane = Airplane()
+train = Train()
+passengers(plane)
