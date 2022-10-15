@@ -1,0 +1,34 @@
+# Exercise 3
+# author: @raj-ch017
+
+"""
+Define the BankAccount class which has attributes for checking and savings. 
+Use the Python convention to make these attributes private. 
+Create the getters get_checking and get_savings, and create the setters set_checking and set_savings.
+"""
+
+class BankAccount:
+  def __init__(self,checking=0,savings=0):
+    self._checking = checking
+    self._savings = savings
+  
+  def get_checking(self):
+    return self._checking
+
+  def set_checking(self,val):
+    self._checking = val
+
+  def get_savings(self):
+    return self._savings
+
+  def set_savings(self,val):
+    self._savings = val
+
+my_account = BankAccount()
+my_account.set_checking(500.50)
+my_account.set_savings(8000)
+
+money_in_checking = my_account.get_checking()
+money_in_savings = my_account.get_savings()
+print("Money in checking account: {}".format(money_in_checking))
+print("Money in savings account: {}".format(money_in_savings))
