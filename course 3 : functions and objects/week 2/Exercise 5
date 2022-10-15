@@ -1,0 +1,21 @@
+# Exercise 5
+# author: @raj-ch017
+
+"""
+Write a recursive function called get_max that takes a list of numbers as a parameter. Return the largest number in the list.
+
+Expected Output:
+
+      If the function call is get_max([1, 2, 3, 4, 5]), then the function would return 5
+      If the function call is get_max([11, 22, 3, 41, 15]), then the function would return 41
+"""
+
+def get_max(list1):
+  if len(list1) == 1:
+    return list1[0]
+  else:
+    p = min(list1)
+    list1.remove(p)
+    return get_max(list1)
+
+print(get_max([11,22,3,41,15]))
