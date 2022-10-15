@@ -1,0 +1,19 @@
+# Exercise 1
+# author: @raj-ch017
+
+"""
+Write a script that imports the Phone and Laptop classes. These classes are found in the tech module. Your script must import the classes as follows:
+
+  import tech
+  
+      Instantiate an instance of the Phone class and call it my_phone. It should have the name "Pixel 5", the color "sage", and 128 gigabytes of storage.
+      Instantiate an instance of the Laptop class and call it my_laptop. It should have the name "MacBook Pro", a size of 15 inches, and 256 gigabytes of storage.
+"""
+
+import tech
+
+my_phone = tech.Phone('Pixel 5', 'sage', 128)
+my_laptop = tech.Laptop('MacBook Pro', 15, 256)
+
+print(my_phone)
+print(my_laptop)
