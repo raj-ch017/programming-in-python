@@ -1,0 +1,23 @@
+# Exercise 2
+# author: @raj-ch017
+
+"""
+Write a recursive function called list_sum that takes a list of numbers as a parameter. 
+Return the sum of all of the numbers in the list. Hint, the slice operator will be helpful in solving this problem.
+
+Expected Output:
+
+      If the function call is list_sum([1, 2, 3, 4, 5]), then the function would return 15
+      If the function call is list_sum([10, 12.5, 10, 7]), then the function would return 39.5
+"""
+
+
+def list_sum(list1):
+  if len(list1) == 0:
+    return 0
+  else:
+    i = list1[-1]
+    list1.pop()
+    return i + list_sum(list1)
+
+print(list_sum([10,12.5,10,7]))
