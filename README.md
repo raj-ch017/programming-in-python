@@ -9,6 +9,8 @@ A Hands-on Introduction
 
 This specialization is intended for people without programming experience who seek to develop python programming skills and learn about the underlying computer science concepts that will allow them to pick up other programming languages quickly. In these four courses, you will cover everything from fundamentals to object-oriented design. These topics will help prepare you to write anything from small programs to automate repetitive tasks to larger applications, giving you enough understanding of python to tackle more specialized topics such as Data Science and Artificial Intelligence.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 <h1>
 <p align = "center">
@@ -19,9 +21,6 @@ Python Basics: Selection and Iteration
 </p>
 </h1>
 
-This course is designed for learners with no coding experience, providing a solid foundation of not just python, but core Computer Science topics that can be transferred to other languages. The modules in this course cover printing, operators, iteration (i.e., loops), and selection (i.e., conditionals).
-
-To allow for a truly hands-on, self-paced learning experience, this course is video-free. Assignments contain short explanations with images and runnable code examples with suggested edits to explore code examples further, building a deeper understanding by doing. You'll benefit from instant feedback from a variety of assessment items along the way, gently progressing from quick understanding checks (multiple choice, fill in the blank, and un-scrambling code blocks) to small, approachable coding exercises that take minutes instead of hours.
 
 Course Objectives:
 
@@ -30,6 +29,8 @@ Course Objectives:
   - Automate decision making using selection statements so the program result differs based on data
   
   ![image](https://user-images.githubusercontent.com/96816530/195805027-023d8d83-6e91-4546-910a-92a8127622d2.png)
+  
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
   
 <h1>
 <p align = "center">
@@ -40,7 +41,6 @@ Python Basic Structures: Lists, Strings, and Files
 </p>
 </h1>
 
-This course is designed for learners with limited coding experience, providing a solid foundation of not just python, but core Computer Science topics that can be transferred to other languages. The modules in this course cover lists, strings, and files. Completion of Python Basics: Selection and Iteration before taking this course is recommended.
   
   Course Objectives:
 
@@ -49,3 +49,44 @@ This course is designed for learners with limited coding experience, providing a
   - Compare and manipulate strings of text
   
   ![image](https://user-images.githubusercontent.com/96816530/195805825-54b8c374-69a0-44cd-b470-614df7cc8b6e.png)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<h1>
+<p align = "center">
+Course 3 -
+</p>
+<p align = "center">
+Python Object Basics: Functions, Recursion, and Objects
+</p>
+</h1>
+
+
+Course Objectives:
+
+  - Define and use custom functions to improve code readability
+  - When and how to use recursion instead of iteration
+  - Create and modify custom objects
+  
+![image](https://user-images.githubusercontent.com/96816530/196006296-ee74fda3-b194-43f3-bad8-022e8da9c883.png)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+<h1>
+<p align = "center">
+Course 4 -
+</p>
+<p align = "center">
+Object-Oriented Python: Inheritance and Encapsulation
+</p>
+</h1> 
+
+Course Objectives:
+
+  - How to architect larger programs using object-oriented principles
+  - Encapsulate relevant information and methods in a class
+  - Re-use parts of classes using inheritance
+  
+  ![image](https://user-images.githubusercontent.com/96816530/196006367-6cec58b0-280a-485c-a20e-5f1f5c8ee883.png)
+  
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
