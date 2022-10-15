@@ -1,0 +1,21 @@
+# Exercise 3
+# author: @raj-ch017
+
+"""
+Write a recursive function called bunny_ears that takes the number of bunnies (an integer) as a parameter. 
+Return the number of bunny ears (2 per bunny). Do not use multiplication; instead use addition.
+
+Expected Output:
+
+      If the function call is bunny_ears(8), then the function would return 16
+      If the function call is bunny_ears(0), then the function would return 0
+"""
+
+
+def bunny_ears(n):
+  if n == 0:
+    return 0
+  else:
+    return 2 + bunny_ears(n-1)
+
+print(bunny_ears(20))
