@@ -1,0 +1,37 @@
+# Exercise 4
+# author: @raj-ch017
+
+"""
+Create the Median that has the method calculate_median that calculates the median of the integers passed to the method. 
+Use method overloading so that this method can accept anywhere from two to five parameters.
+"""
+
+class Median:
+    def calculate_median(self,para1,para2,para3=None,para4=None,para5=None):
+        the_list = []
+        the_list.append(para1)
+        the_list.append(para2)
+        if para3 is not None and para4 is not None and para5 is not None:
+            the_list.append(para3)
+            the_list.append(para4)
+            the_list.append(para5)
+            the_list.sort()
+            return the_list[2]
+        elif para3 is not None and para4 is not None and para5 is None:
+            the_list.append(para3)
+            the_list.append(para4)
+            the_list.sort()
+            return (the_list[1]+the_list[2])/2
+        elif para3 is not None and para4 is None and para5 is None:
+            the_list.append(para3)
+            the_list.sort()
+            return the_list[1]
+        else:
+            return (the_list[0]+the_list[1])/2
+
+
+m = Median()
+print(m.calculate_median(3,5,1,4,2))
+print(m.calculate_median(8,6,4,2))
+print(m.calculate_median(9,3,7))
+print(m.calculate_median(5,2))
